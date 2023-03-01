@@ -10,13 +10,14 @@
 
     'depends': ['base', 'website'],
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/snippet_template.xml',
-        # 'views/supplier_products.xml',
+        'views/snippet_view.xml',
+        'views/recently_viewed.xml',
     ],
     'assets': {
        'web.assets_frontend': [
-           '/web_recently_viewed_product/static/src/js/dynamic.js',
+           'web_recently_viewed_product/static/src/xml/snippet_template.xml',
+           'web_recently_viewed_product/static/src/js/dynamic.js',
+           'web_recently_viewed_product/static/src/css/snippet_template.scss',
        ],
 }
 }
